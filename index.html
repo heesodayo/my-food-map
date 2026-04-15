@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="sohee"/>
+    <meta name="description" content="맛집지도서비스"/>
+    <meta name="keyword" content="맛집지도, 유튜버맛집"/>
+    <title>맛집지도서비스</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 넣으시면 됩니다."></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <h4>맛집지도</h4>
+        <button class="mainButton" >Contact</button>
+        </div>
+    </div>
+    <div class="container" id="vertical">
+        <h5>맛집지도 카테고리를 선택해보세요</h5>
+        <div class="categoryList">
+            <button class="categoryItem">한식</button>
+            <button class="categoryItem">중식</button>
+            <button class="categoryItem">일식</button>
+            <button class="categoryItem">양식</button>
+            <button class="categoryItem">분식</button>
+            <button class="categoryItem">구이</button>
+            <button class="categoryItem">회/초밥</button>
+            <button class="categoryItem">기타</button>
+        </div>
+    </div>
+    <div>
+        <div id="map" style="width:500px;height:400px;">
+            	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+        </div>
+    </div>
+</body>
+</html>
