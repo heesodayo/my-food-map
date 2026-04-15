@@ -8,7 +8,6 @@
     <meta name="keyword" content="맛집지도, 유튜버맛집"/>
     <title>맛집지도서비스</title>
     <link rel="stylesheet" href="./style.css">
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 넣으시면 됩니다."></script>
 </head>
 <body>
     <div class="header">
@@ -30,18 +29,8 @@
             <button class="categoryItem">기타</button>
         </div>
     </div>
-    <div>
-        <div id="map" style="width:500px;height:400px;">
-            	<script>
-		var container = document.getElementById('map');
-		var options = {
-			center: new kakao.maps.LatLng(33.450701, 126.570667),
-			level: 3
-		};
-
-		var map = new kakao.maps.Map(container, options);
-	</script>
-        </div>
-    </div>
+    <div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f5af3e9e02010ce03906351e34e7ea40"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
